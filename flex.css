@@ -28,10 +28,13 @@
 .flex-container {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   flex-wrap: wrap;
   justify-content: space-evenly;
   border:10px solid goldenrod;
   height: 100vh;
+  max-width:1280px;
+  margin: 0 auto;
 }
 
 [class^="box"] {
@@ -40,51 +43,19 @@
 }
 
 .box1 {
-  width: 97vh;
+  width: 97.5%;
   height: 24%;
-  justify-content: center;
-  margin-top: 1vh;
 }
 
-.box2 {
-  width: 49%;
-  height: 24%;
-  justify-content: flex-start;
-}
-.box3 {
-  width: 49%;
-  height: 24%;
-  justify-content: flex-start;
-}
-.box4 {
-  justify-content: flex-start;
-  width: 23.5vh;
+.box2, .box3 {
+  width: 48%;
   height: 24%;
 }
-.box5 {
-  justify-content: center;
-  width: 23.5vh;
+.box4, .box5, .box6, .box7 {
+  width: calc(95%/4);
   height: 24%;
 }
-.box6 {
-  justify-content: center;
-  width: 23.5vh;
-  height: 24%;
-}
-.box7 {
-  justify-content: flex-end;
-  width: 23.5vh;
-  height: 24%;
-}
-.box8 {
-  width: 32vh;
-  height: 24%;
-}
-.box9 {
-  width: 32vh;
-  height: 24%;
-}
-.box10 {
-  width: 32vh;
+.box8, .box9, .box10 {
+  width: calc(96%/3);
   height: 24%;
 }
